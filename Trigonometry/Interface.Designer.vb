@@ -22,21 +22,25 @@ Partial Class InterfaceWindow
    'Do not modify it using the code editor.
    <System.Diagnostics.DebuggerStepThrough()>
    Private Sub InitializeComponent()
-      Me.SuspendLayout()
-      '
-      'InterfaceWindow
-      '
-      Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
-      Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-      Me.BackColor = System.Drawing.Color.Black
-      Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-      Me.ClientSize = New System.Drawing.Size(423, 395)
-      Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-      Me.KeyPreview = True
-      Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-      Me.Name = "InterfaceWindow"
-      Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-      Me.ResumeLayout(False)
+        Me.components = New System.ComponentModel.Container()
+        Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.SuspendLayout()
+        '
+        'InterfaceWindow
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Black
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.ClientSize = New System.Drawing.Size(423, 395)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.KeyPreview = True
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Name = "InterfaceWindow"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.ResumeLayout(False)
 
-   End Sub
+    End Sub
+
+    Friend WithEvents ToolTip As System.Windows.Forms.ToolTip
 End Class

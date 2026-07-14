@@ -31,6 +31,8 @@ Public Class InterfaceWindow
          Me.BackgroundImage = GraphicsO
 
          DrawGraphics(OppositeX:=CInt(Me.ClientSize.Width / 2), OppositeY:=CInt(Me.ClientSize.Height / 2))
+
+         ToolTip.SetToolTip(Me, "Click inside the window to initialize a triangle.")
       Catch ExceptionO As Exception
          MessageBox.Show(ExceptionO.Message, My.Application.Info.Title, MessageBoxButtons.OK, MessageBoxIcon.Error)
       End Try
